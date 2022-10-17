@@ -1,0 +1,19 @@
+{
+    "name": "app/demo",
+    "description": "Première utilisation de Composer et Git, petits exercices pour la prise en main.",
+    "type": "project",
+    "require": {
+        "fakerphp/faker": "^1.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Demo\\": "App"
+        }
+    },
+    "authors": [
+        {
+            "name": "Parasmo",
+            "email": "parasmomarco@hotmail.com"
+        }
+    ]
+}
