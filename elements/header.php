@@ -16,6 +16,13 @@
             background-color: #333;
             color: #fff;
         }
+        div {
+            background-color:#000;
+            color:#3FBBD5;
+            font-size:11px;
+            z-index:99999;
+            position:relative;
+        }
     </style>
 </head>
 <body>

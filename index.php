@@ -13,7 +13,7 @@ $db = new PersonneManager('poo_php');
 $personne = PersonneManager::create(1)[0];
 
 /* Insert les données dans la BD */
-$db->insert($personne);
+// $db->insert($personne);
 
 /* Crée une personne dans la BD */
 // $db->getCreate();
@@ -24,9 +24,7 @@ $db->insert($personne);
 /* Supprime la BD grâce à l'ID */
 // $db->delete(9);
 
-echo '<pre>';
-print_r($personne);
-echo '</pre>';
+
 $title = 'Exercice 3';
 require 'elements/header.php';
 ?>
@@ -56,6 +54,13 @@ require 'elements/header.php';
     <?php endforeach ?>
 
 </table>
+
+<h1>Affichez la BD</h1>
+<div>
+    <pre>
+    <?= print_r($db->read()) ?>
+    </pre>
+</div>
 <?php
 require 'elements/footer.php';
 ?>
